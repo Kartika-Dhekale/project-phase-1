@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  
+}
+
+/* ---------------- Header ---------------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 15px 0;
+  z-index: 9999; 
+  
+}
+
+.header a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color:#111111;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.header a:hover {
+  color: #4b6a9b;
+  transform: scale(0.95);
+}
+/* ---------------- Container Layout (Grid) ---------------- */
+.container1 {
+  width: 100%;
+height: 900px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  
+}
+.container1 img {
+  margin-top: 70px;
+  margin-left: 90px;
+  margin-right: 90px;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 25px; 
+  
+}
+
+.container1-text {
+  position: absolute;       
+  top: 40%;                
+  left: 10%;               
+               
+  max-width: 400px;         
+}
+
+.container1-text h1{
+  font-size: 3.25rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #ffffff !important;
+  font-family: 'Alexandria';
+}
+.container1-text h5{
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-family: 'Alexandria';
+  color: #ffffff;
+
+}
+.container1-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #ffffff !important;
+  font-family: 'Open Sans' , sans-serif;
+}
+
+
+.ai-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 60px 0;
+  
+}
+
+.ai-left, .ai-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.ai-left img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.ai-right img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.ai-box {
+  background-color: #a4bed7;;
+  border-radius: 20px;
+  padding: 25px;
+  border-radius: 50px;
+  height: 250px;
+}
+.ai-box p{
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  font-family: 'Open Sans' ,sans-serif;
+}
+.ai-text {
+  background-color: #e9e9e9;
+  border-radius: 20px;
+  padding: 35px;
+ 
+}
+
+.ai-text h2 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: inherit;
+  margin-bottom: 10px;
+  font-family: 'Alexandria';
+}
+
+.ai-text p {
+  font-size: 14px;
+  color: #6e6e6e;
+}
+
+.ai-text a {
+  color: #7ea1f7;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .ai-section {
+    flex-direction: column;
+  }
+}
+
+
+/* Cards Section */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.card {
+  width: 280px;
+  border-radius: 20px;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* ---------------- Left Section ---------------- */
+.left h1 {
+  font-size: 0.8rem;
+  font-weight: 200;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.watch-btn {
+  background: transparent;
+  border: 2px solid #000;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.watch-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ---------------- Right Section ---------------- */
+.right {
+  background: #f5f6f7;
+  border-radius: 20px;
+  padding: 25px 30px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.right img {
+  width: 180px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.right p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.discover-btn {
+  background: #cfdaf2;
+  border: none;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.discover-btn:hover {
+  background: #b5c5e0;
+}
+
+/* ---------------- Responsive Design ---------------- */
+@media (max-width: 900px) {
+  .container1 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .left h1 {
+    font-size: 2rem;
+  }
+
+  .right {
+    max-width: 100%;
+  }
+}
+.partner-logos {
+  background-color: #f8f8f8;   /* light gray background */
+  padding: 60px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 logos per row */
+  gap: 50px 200px;  /* row-gap, column-gap */
+  justify-items: center;
+  align-items: center;
+
+}
+
+.logos-container img {
+  width: 100px;
+  height: auto;
+  opacity: 0.3;             
+  filter: grayscale(100%);  
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .logos-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .logos-container img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ===== Team Section ===== */
+.team {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+  justify-items: center;
+  padding: 80px 10%;
+  background-color: #f5f5f5;
+}
+
+/* ===== Member Card ===== */
+.member {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 40px 20px;
+  width: 400px;
+  height: 400px;
+  transition: transform 0.3s ease; 
+ 
+}
+
+.member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Member Image ===== */
+.member img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* ===== Member Name ===== */
+.member h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* ===== Member Role ===== */
+.member p {
+  font-size: 1rem;
+  color: #7eaac5;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .team {
+    gap: 30px;
+    padding: 60px 5%;
+  }
+
+  .member {
+    padding: 30px 15px;
+  }
+
+  .member img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  
+  object-fit: cover;
+}
+/* ===== Awards Section ===== */
+.awards {
+  background-color: #ffffff;
+  padding: 80px 10%;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+}
+
+/* Headings */
+.awards h2 {
+  font-size: 1.2rem;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.awards h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #111;
+  max-width: 800px;
+  line-height: 1.4;
+}
+
+/* ===== Award Cards ===== */
+.award-card {
+  background-color: #f4f5f7;
+  border-radius: 20px;
+  padding: 30px 40px;
+  max-width: 900px;
+  height: 250px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: right; /* Align all text to the right */
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Align right cards naturally */
+.award-card.right {
+  margin-left: auto;
+}
+
+/* Year styling */
+.year {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a8b8ce;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+/* Award title */
+.award-card h4 {
+  text-align: start;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+/* Description text */
+.award-card p {
+  text-align: start;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .awards {
+    padding: 60px 5%;
+  }
+
+  .awards h1 {
+    font-size: 1.6rem;
+  }
+
+  .award-card {
+    max-width: 100%;
+    padding: 25px 20px;
+    text-align: left; /* On mobile, return to left alignment for readability */
+  }
+
+  .award-card.right {
+    margin-left: 0;
+  }
+
+  .year {
+    font-size: 2rem;
+  }
+}
+
+
+
+.subscribe-section {
+  background-color: #2b2f33;
+  color: #fff;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Content Container */
+.subscribe-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Left Side Text */
+.subscribe-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.subscribe-text p {
+  font-size: 1.1rem;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+
+/* Right Side Form */
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1000px;
+  margin-left: 50px;
+  margin-top: 0;
+}
+
+.form-text {
+  color:#ffffff;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Form Inputs */
+.subscribe-form form {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 600px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  width: 100%;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.subscribe-form input::placeholder {
+  color: #999;
+}
+
+.subscribe-form button {
+  background-color: #8aa9c7;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  width: 180px;
+  border-radius: 30px;
+  padding: 17px 34px;
+  cursor: pointer;
+  
+}
+
+.subscribe-form button:hover {
+  background-color: #7a99b7;
+}
+
+/* Bottom Text */
+.bottom-text {
+  color:#ffffff;
+  margin-top: 40px;
+  font-size: 1rem;
+}

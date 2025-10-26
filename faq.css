@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+  width: 100%;
+  height: 100vh;
+
+  font-family: "Poppins", sans-serif;
+ 
+  background-color: #fff;
+  
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 15px 0;
+  z-index: 9999; 
+}
+
+.header a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color:#111111;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.header a:hover {
+  color: #4b6a9b;
+  transform: scale(0.95);
+}
+
+/* Main Section */
+.main {
+  
+  padding: 2rem 8%;
+  background-color: #fff;
+}
+
+.main h2 {
+  margin-top: 110px;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 1.1;
+  display: table;
+  align-self: flex-start;
+  color: inherit;
+  margin-left: 150px;
+}
+
+.question {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  gap: 1.5rem;
+  margin-left: 150px;
+  margin-right: 150px;
+ 
+}
+
+.question h3 {
+  font-size: 3rem;
+  color: #a4bed7 !important;
+  font-weight: 400;
+  font-family: 'Alexandria';
+}
+
+.content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: 'Alexandria';
+  color: inherit;
+}
+.content p {
+  font-size: 1rem;
+  font-family: 'Alexandria';
+  font-weight: 300;
+  line-height: 1.6;
+  color: #111111;
+  margin-top: 40px;
+
+}
+
+.image-section 
+img {
+  width: 100%;
+  
+  height: 700px;
+
+  
+}
+
+/* ===== AI Challenge Section Layout ===== */
+.ai-section {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 140px;
+  padding: 100px 0px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  margin-bottom: 80px;
+}
+
+/* ===== Left Panel ===== */
+.left-panel {
+  background-color: #f4f5f7;
+  padding: 50px 0px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 60px;
+  width: 470px;
+  height: 440px;
+}
+
+.left-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  padding: 50px 40px;
+}
+
+.left-panel li {
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #111111;
+  position: relative;
+  font-family: 'Alexandria', sans-serif;
+  
+}
+
+.left-panel li::before {
+  content: "•";
+  color: #1a3e76;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.left-panel img {
+  width: 100%;
+  height: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+/* ===== Right Panel ===== */
+.right-panel {
+  
+  text-align: left;
+  max-width: 900px;
+  padding-top: 10px;
+  height: 600px;
+}
+
+.right-panel h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: inherit;
+  line-height: 1.2;
+  font-family: 'Alexandria', sans-serif;
+  margin-bottom: 30px;
+}
+
+/* Banner Image */
+.banner {
+  width: 300px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+
+/* Paragraph */
+.right-panel p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #111111;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  max-width: 650px;
+  margin-left: 15px;
+  font-family: 'Alexandria';
+}
+
+/* FAQ Links */
+.faq-links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.faq-links a {
+  text-decoration: none;
+  color: #a4bed7;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-family: 'Alexandria', sans-serif;
+  transition: color 0.3s;
+}
+
+.faq-links a:hover {
+  color: #5f7cb5;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .ai-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+  }
+
+  .left-panel {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .right-panel {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .banner {
+    margin: 0 auto 25px;
+  }
+
+  .faq-links a {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== General Section Styling ===== */
+.subscribe-section {
+  background-color: #292e33; /* dark gray background */
+  color: #ffffff;
+  padding: 90px 120px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:500px;
+}
+
+/* ===== Main Grid ===== */
+.subscribe-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* ===== Left Side Text ===== */
+.subscribe-text h2 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.subscribe-text p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* ===== Subscribe Section ===== */
+.subscribe-section {
+  background-color: #2b2f33;
+  color: #fff;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content Container */
+.subscribe-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Left Side Text */
+.subscribe-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.subscribe-text p {
+  font-size: 1.1rem;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+
+/* Right Side Form */
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1000px;
+  margin-left: 50px;
+  margin-top: 0;
+}
+
+.form-text {
+  color:#ffffff;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Form Inputs */
+.subscribe-form form {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 600px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  width: 100%;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.subscribe-form input::placeholder {
+  color: #999;
+}
+
+.subscribe-form button {
+  background-color: #8aa9c7;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  width: 180px;
+  border-radius: 30px;
+  padding: 17px 34px;
+  cursor: pointer;
+  
+}
+
+.subscribe-form button:hover {
+  background-color: #7a99b7;
+}
+
+/* Bottom Text */
+.bottom-text {
+  color:#ffffff;
+  margin-top: 40px;
+  font-size: 1rem;
+}
